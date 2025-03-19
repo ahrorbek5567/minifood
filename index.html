@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container text-center">
+            <a class="navbar-brand" href="#"></a>
+            <img width="250px" src="images/logo.png" alt="">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto text-center">
+                    <li class="nav-item">
+                        <a class="nav-link text-warning active" href="#">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="https://t.me/AHRORBEKGROUP">Контакты</a>
+                    </li>
+                </ul>
+                <div class="text-center language-container">
+                    <button class="cart-button1 border-0">🛒 Корзина</button>
+                    <i id="languageToggle" style="font-size: 25px; color: white; cursor: pointer;"
+                        class="bi bi-globe m-2"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <section style="background-color: #036C5E; color: white;">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-6 mt-5">
+                    <h1 class="display-3 font-monospace">10% скидки на все <br> бургеры!</h1><br><br>
+                    <p style="font-size: 20px;" class="mb-5 mt-3">
+                        Общая сумма заказа должна быть больше или равна 70 000 сум. Предложение не распространяется на
+                        доставку. Акция "Товар дня" продлится до 31.12.2022. следите за предложениями!
+                    </p>
+
+                    <div class="container mt-4">
+                        <button class="btn btn-warning text-light mt-3 mb-3">В меню
+                    </div>
+
+
+                </div>
+                <div class="col-12 col-sm-6 mt-5">
+                    <img width="100%" class="m-auto mb-3" src="images/photo_2025-03-06_20-00-49.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <div class="bg-light text-dark mb-3 container">
+        <div class="btn-group flex-wrap" role="group">
+            <button class="btn btn-primary m-3" onclick="filterItems('all')">Барчаси</button>
+            <button class="btn m-3" onclick="filterItems('lavash')">Лаваш</button>
+            <button class="btn m-3" onclick="filterItems('shaurma')">Шоурма</button>
+            <button class="btn m-3" onclick="filterItems('burger')">Бургер</button>
+            <button class="btn m-3" onclick="filterItems('hotdog')">Ҳотдог</button>
+            <button class="btn m-3" onclick="filterItems('pitsa')">Питса</button>
+            <button class="btn m-3" onclick="filterItems('ichimlik')">Ичимлик</button>
+        </div>
+
+
+
+        <div class="item lavash mt-2 mb-2">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card shadow-sm">
+                        <img src="images/lavash png.png" class="card-img-top img-fluid" alt="Mahsulot rasmi">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Саб с говядиной</h5>
+                            <p class="card-text text-muted">Сочная говядина гриль, кольца свежего красного лука, соус
+                                "барбекю" с дымком в удлиненной пышной булочке</p>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div>
+                                    <span class="text-decoration-line-through text-muted" style="font-size: 14px;">10
+                                        000 сум</span><br>
+                                    <span class="fw-bold text-success" style="font-size: 24px;">9 000 сум</span>
+                                </div>
+                                <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                                    aria-controls="offcanvasRight" class="btn btn-success px-4 py-2"
+                                    style="background-color: #E6F0E6; color: #0F6938; border: none; font-weight: bold;">
+                                    В корзинку
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card shadow-sm">
+                        <img src="images/lavash png.png" class="card-img-top img-fluid" alt="Mahsulot rasmi">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Саб с говядиной</h5>
+                            <p class="card-text text-muted">Сочная говядина гриль, кольца свежего красного лука, соус
+                                "барбекю" с дымком в удлиненной пышной булочке</p>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div>
+                                    <span class="text-decoration-line-through text-muted" style="font-size: 14px;">10
+                                        000 сум</span><br>
+                                    <span class="fw-bold text-success" style="font-size: 24px;">9 000 сум</span>
+                                </div>
+                                <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                                    aria-controls="offcanvasRight" class="btn btn-success px-4 py-2"
+                                    style="background-color: #E6F0E6; color: #0F6938; border: none; font-weight: bold;">
+                                    В корзинку
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card shadow-sm">
+                        <img src="images/lavash png.png" class="card-img-top img-fluid" alt="Mahsulot rasmi">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Саб с говядиной</h5>
+                            <p class="card-text text-muted">Сочная говядина гриль, кольца свежего красного лука, соус
+                                "барбекю" с дымком в удлиненной пышной булочке</p>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div>
+                                    <span class="text-decoration-line-through text-muted" style="font-size: 14px;">10
+                                        000 сум</span><br>
+                                    <span class="fw-bold text-success" style="font-size: 24px;">9 000 сум</span>
+                                </div>
+                                <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                                    aria-controls="offcanvasRight" class="btn btn-success px-4 py-2"
+                                    style="background-color: #E6F0E6; color: #0F6938; border: none; font-weight: bold;">
+                                    В корзинку
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card shadow-sm">
+                        <img src="images/lavash png.png" class="card-img-top img-fluid" alt="Mahsulot rasmi">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Саб с говядиной</h5>
+                            <p class="card-text text-muted">Сочная говядина гриль, кольца свежего красного лука, соус
+                                "барбекю" с дымком в удлиненной пышной булочке</p>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div>
+                                    <span class="text-decoration-line-through text-muted" style="font-size: 14px;">10
+                                        000 сум</span><br>
+                                    <span class="fw-bold text-success" style="font-size: 24px;">9 000 сум</span>
+                                </div>
+                                <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                                    aria-controls="offcanvasRight" class="btn btn-success px-4 py-2"
+                                    style="background-color: #E6F0E6; color: #0F6938; border: none; font-weight: bold;">
+                                    В корзинку
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class=" item shaurma">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="product-card bg-white">
+                        <img src="images/shaurma.png" class="product-img" alt="Mahsulot rasmi">
+                        <h5 class="mt-3">Саб с говядиной</h5>
+                        <p class="text-muted">Сочная говядина гриль, кольца свежего красного лука, соус "барбекю" с
+                            дымком в удлиненной пышной булочке</p>
+
+                        <div style="display: inline-block;margin-top: 30px;">
+                            <span class="new-price">9 000 сум</span>
+                            <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                                aria-controls="offcanvasRight"
+                                style="border: 2px solid;width: 150px; margin-left: 10px;" class="btn text-success">В
+                                корзинку</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="product-card bg-white">
+                        <img src="images/shourma2.png" class="product-img" alt="Mahsulot rasmi">
+                        <h5 class="mt-3">Саб с говядиной</h5>
+                        <p class="text-muted">Сочная говядина гриль, кольца свежего красного лука, соус "барбекю" с
+                            дымком в удлиненной пышной булочке</p>
+
+                        <div style="display: inline-block;margin-top: 30px;">
+                            <span class="new-price">9 000 сум</span>
+                            <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                                aria-controls="offcanvasRight"
+                                style="border: 2px solid;width: 150px; margin-left: 10px;" class="btn text-success">В
+                                корзинку</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="product-card bg-white">
+                        <img src="images/shaurma.png" class="product-img" alt="Mahsulot rasmi">
+                        <h5 class="mt-3">Саб с говядиной</h5>
+                        <p class="text-muted">Сочная говядина гриль, кольца свежего красного лука, соус "барбекю" с
+                            дымком в удлиненной пышной булочке</p>
+
+                        <div style="display: inline-block;margin-top: 30px;">
+                            <span class="new-price">9 000 сум</span>
+                            <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                                aria-controls="offcanvasRight"
+                                style="border: 2px solid;width: 150px; margin-left: 10px;" class="btn text-success">В
+                                корзинку</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="product-card bg-white">
+                        <img src="images/shourma2.png" class="product-img" alt="Mahsulot rasmi">
+                        <h5 class="mt-3">Саб с говядиной</h5>
+                        <p class="text-muted">Сочная говядина гриль, кольца свежего красного лука, соус "барбекю" с
+                            дымком в удлиненной пышной булочке</p>
+
+                        <div style="display: inline-block;margin-top: 30px;">
+                            <span class="new-price">9 000 сум</span>
+                            <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                                aria-controls="offcanvasRight"
+                                style="border: 2px solid;width: 150px; margin-left: 10px;" class="btn text-success">В
+                                корзинку</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <section>
+            <div class="item pitsa">
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-2 product-card1 text-center mycol">
+                        <div style="height: 540px;" class="card">
+                            <img src="images/round-pizza-isolated-on-transparent-background-italian-pizza-with-mushroom-toppings-generative-ai-png.webp"
+                                class="card-img-top" alt="Pitsa">
+                            <p class="p-3">Сочная говядина гриль, кольца свежего красного лука, соус "барбекю" с дымком
+                                в удлиненной пышной булочке</p>
+                            <div class="d-flex align-items-center justify-content-between p-3">
+                                <div>
+                                    <span class="text-decoration-line-through text-muted" style="font-size: 14px;">10
+                                        000 сум</span><br>
+                                    <span class="fw-bold text-success" style="font-size: 24px;">9 000 сум</span>
+                                </div>
+                                <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                                    aria-controls="offcanvasRight" class="btn btn-success px-4 py-2"
+                                    style="background-color: #E6F0E6; color: #0F6938; border: none; font-weight: bold;">
+                                    В корзинку
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-2 product-card1 text-center mycol"
+                        data-category="Пицца">
+                        <div style="height: 540px;" class="card">
+                            <img src="images/pitsa2.webp" class="card-im-top" alt="Pitsa">
+                            <p class="p-3">Сочная говядина гриль, кольца свежего красного лука, соус "барбекю" с дымком
+                                в удлиненной пышной булочке</p>
+                            <div class="d-flex align-items-center justify-content-between p-3">
+                                <div>
+                                    <span class="text-decoration-line-through text-muted" style="font-size: 14px;">10
+                                        000 сум</span><br>
+                                    <span class="fw-bold text-success" style="font-size: 24px;">9 000 сум</span>
+                                </div>
+                                <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                                    aria-controls="offcanvasRight" class="btn btn-success px-4 py-2"
+                                    style="background-color: #E6F0E6; color: #0F6938; border: none; font-weight: bold;">
+                                    В корзинку
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-2 product-card1 text-center mycol"
+                        data-category="Пицца">
+                        <div style="height: 540px;" class="card">
+                            <img src="images/pitsa5.jpg" class="card-img-top" alt="Pitsa">
+                            <p class="p-3">Сочная говядина гриль, кольца свежего красного лука, соус "барбекю" с дымком
+                                в удлиненной пышной булочке</p>
+                            <div class="d-flex align-items-center justify-content-between p-3">
+                                <div>
+                                    <span class="text-decoration-line-through text-muted" style="font-size: 14px;">10
+                                        000 сум</span><br>
+                                    <span class="fw-bold text-success" style="font-size: 24px;">9 000 сум</span>
+                                </div>
+                                <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                                    aria-controls="offcanvasRight" class="btn btn-success px-4 py-2"
+                                    style="background-color: #E6F0E6; color: #0F6938; border: none; font-weight: bold;">
+                                    В корзинку
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-2 product-card1 text-center mycol"
+                        data-category="Пицца">
+                        <div style="height: 540px;" class="card">
+                            <img src="images/pitsa4.jpg" class="card-img-top" alt="Pitsa">
+                            <p class="p-3">Сочная говядина гриль, кольца свежего красного лука, соус "барбекю" с дымком
+                                в удлиненной пышной булочке</p>
+                            <div class="d-flex align-items-center justify-content-between p-3">
+                                <div>
+                                    <span class="text-decoration-line-through text-muted" style="font-size: 14px;">10
+                                        000 сум</span><br>
+                                    <span class="fw-bold text-success" style="font-size: 24px;">9 000 сум</span>
+                                </div>
+                                <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                                    aria-controls="offcanvasRight" class="btn btn-success px-4 py-2"
+                                    style="background-color: #E6F0E6; color: #0F6938; border: none; font-weight: bold;">
+                                    В корзинку
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <div class=" item burger">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="product-card bg-white">
+                        <img src="images/burger2 jpg.png" style="margin-top: -50px;" class="product-img p-3"
+                            alt="Mahsulot rasmi">
+                        <h5 class="mt-3">Саб с говядиной</h5>
+                        <p class="text-muted">Сочная говядина гриль, кольца свежего красного лука, соус "барбекю" с
+                            дымком в удлиненной пышной булочке</p>
+
+                        <div style="display: inline-block;margin-top: 20px;">
+                            <span class="new-price">9 000 сум</span>
+                            <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                                aria-controls="offcanvasRight"
+                                style="border: 2px solid;width: 150px; margin-left: 10px;" class="btn text-success">В
+                                корзинку</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="product-card bg-white">
+                        <img src="images/burger jpg.png" class="product-img" alt="Mahsulot rasmi">
+                        <h5 class="mt-5">Саб с говядиной</h5>
+                        <p class="text-muted">Сочная говядина гриль, кольца свежего красного лука, соус "барбекю" с
+                            дымком в удлиненной пышной булочке</p>
+                        <div class="mt-4" style="display: inline-block;">
+                            <span class="new-price">9 000 сум</span>
+                            <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                                aria-controls="offcanvasRight"
+                                style="border: 2px solid;width: 150px; margin-left: 10px;" class="btn text-success">В
+                                корзинку</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="product-card bg-white">
+                        <img src="images/burger2 jpg.png" style="margin-top: -50px;" class="product-img p-3"
+                            alt="Mahsulot rasmi">
+                        <h5 class="mt-3">Саб с говядиной</h5>
+                        <p class="text-muted">Сочная говядина гриль, кольца свежего красного лука, соус "барбекю" с
+                            дымком в удлиненной пышной булочке</p>
+
+                        <div style="display: inline-block;margin-top: 20px;">
+                            <span class="new-price">9 000 сум</span>
+                            <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                                aria-controls="offcanvasRight"
+                                style="border: 2px solid;width: 150px; margin-left: 10px;" class="btn text-success">В
+                                корзинку</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="product-card bg-white">
+                        <img src="images/burger jpg.png" class="product-img" alt="Mahsulot rasmi">
+                        <h5 class="mt-5">Саб с говядиной</h5>
+                        <p class="text-muted">Сочная говядина гриль, кольца свежего красного лука, соус "барбекю" с
+                            дымком в удлиненной пышной булочке</p>
+                        <div class="mt-4" style="display: inline-block;">
+                            <span class="new-price">9 000 сум</span>
+                            <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                                aria-controls="offcanvasRight"
+                                style="border: 2px solid;width: 150px; margin-left: 10px;" class="btn text-success">В
+                                корзинку</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=" item hotdog">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="product-card bg-white">
+                        <img src="images/xot-dog-1.png" class="product-img" alt="Mahsulot rasmi">
+                        <h5 class="mt-3">Саб с говядиной</h5>
+                        <p class="text-muted">Сочная говядина гриль, кольца свежего красного лука, соус "барбекю" с
+                            дымком в удлиненной пышной булочке</p>
+
+                        <div style="display: inline-block;margin-top: 30px;">
+                            <span class="new-price">9 000 сум</span>
+                            <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                                aria-controls="offcanvasRight"
+                                style="border: 2px solid;width: 150px; margin-left: 10px;" class="btn text-success">В
+                                корзинку</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="product-card bg-white">
+                        <img src="images/xot-dog-2.png" class="product-img" alt="Mahsulot rasmi">
+                        <h5 class="mt-3">Саб с говядиной</h5>
+                        <p class="text-muted">Сочная говядина гриль, кольца свежего красного лука, соус "барбекю" с
+                            дымком в удлиненной пышной булочке</p>
+
+                        <div style="display: inline-block;margin-top: 30px;">
+                            <span class="new-price">9 000 сум</span>
+                            <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                                aria-controls="offcanvasRight"
+                                style="border: 2px solid;width: 150px; margin-left: 10px;" class="btn text-success">В
+                                корзинку</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="product-card bg-white">
+                        <img src="images/xot-dog-3.png" class="product-img" alt="Mahsulot rasmi">
+                        <h5 class="mt-3">Саб с говядиной</h5>
+                        <p class="text-muted">Сочная говядина гриль, кольца свежего красного лука, соус "барбекю" с
+                            дымком в удлиненной пышной булочке</p>
+
+                        <div style="display: inline-block;margin-top: 30px;">
+                            <span class="new-price">9 000 сум</span>
+                            <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                                aria-controls="offcanvasRight"
+                                style="border: 2px solid;width: 150px; margin-left: 10px;" class="btn text-success">В
+                                корзинку</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="product-card bg-white">
+                        <img src="images/xot-dog-1.png" class="product-img" alt="Mahsulot rasmi">
+                        <h5 class="mt-3">Саб с говядиной</h5>
+                        <p class="text-muted">Сочная говядина гриль, кольца свежего красного лука, соус "барбекю" с
+                            дымком в удлиненной пышной булочке</p>
+
+                        <div style="display: inline-block;margin-top: 30px;">
+                            <span class="new-price">9 000 сум</span>
+                            <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                                aria-controls="offcanvasRight"
+                                style="border: 2px solid;width: 150px; margin-left: 10px;" class="btn text-success">В
+                                корзинку</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=" item ichimlik">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card shadow-sm">
+                        <img src="images/suv1.png" class="card-img-top img-fluid" alt="Mahsulot rasmi">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Саб с говядиной</h5>
+                            <p class="card-text text-muted">Сочная говядина гриль, кольца свежего красного лука, соус
+                                "барбекю" с дымком в удлиненной пышной булочке</p>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div>
+                                    <span class="text-decoration-line-through text-muted" style="font-size: 14px;">10
+                                        000 сум</span><br>
+                                    <span class="fw-bold text-success" style="font-size: 24px;">9 000 сум</span>
+                                </div>
+                                <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                                    aria-controls="offcanvasRight" class="btn btn-success px-4 py-2"
+                                    style="background-color: #E6F0E6; color: #0F6938; border: none; font-weight: bold;">
+                                    В корзинку
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card shadow-sm">
+                        <img src="images/suv2.png" class="card-img-top img-fluid" alt="Mahsulot rasmi">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Саб с говядиной</h5>
+                            <p class="card-text text-muted">Сочная говядина гриль, кольца свежего красного лука, соус
+                                "барбекю" с дымком в удлиненной пышной булочке</p>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div>
+                                    <span class="text-decoration-line-through text-muted" style="font-size: 14px;">10
+                                        000 сум</span><br>
+                                    <span class="fw-bold text-success" style="font-size: 24px;">9 000 сум</span>
+                                </div>
+                                <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                                    aria-controls="offcanvasRight" class="btn btn-success px-4 py-2"
+                                    style="background-color: #E6F0E6; color: #0F6938; border: none; font-weight: bold;">
+                                    В корзинку
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card shadow-sm">
+                        <img src="images/suv3.png" class="card-img-top img-fluid" alt="Mahsulot rasmi">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Саб с говядиной</h5>
+                            <p class="card-text text-muted">Сочная говядина гриль, кольца свежего красного лука, соус
+                                "барбекю" с дымком в удлиненной пышной булочке</p>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div>
+                                    <span class="text-decoration-line-through text-muted" style="font-size: 14px;">10
+                                        000 сум</span><br>
+                                    <span class="fw-bold text-success" style="font-size: 24px;">9 000 сум</span>
+                                </div>
+                                <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                                    aria-controls="offcanvasRight" class="btn btn-success px-4 py-2"
+                                    style="background-color: #E6F0E6; color: #0F6938; border: none; font-weight: bold;">
+                                    В корзинку
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card shadow-sm">
+                        <img src="images/suv4.png" class="card-img-top img-fluid" alt="Mahsulot rasmi">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Саб с говядиной</h5>
+                            <p class="card-text text-muted">Сочная говядина гриль, кольца свежего красного лука, соус
+                                "барбекю" с дымком в удлиненной пышной булочке</p>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div>
+                                    <span class="text-decoration-line-through text-muted" style="font-size: 14px;">10
+                                        000 сум</span><br>
+                                    <span class="fw-bold text-success" style="font-size: 24px;">9 000 сум</span>
+                                </div>
+                                <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                                    aria-controls="offcanvasRight" class="btn btn-success px-4 py-2"
+                                    style="background-color: #E6F0E6; color: #0F6938; border: none; font-weight: bold;">
+                                    В корзинку
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="product-card bg-white">
+                    <img src="images/Rectangle 3 (1).png" class="product-img" alt="Mahsulot rasmi">
+                    <h5 class="mt-3">Саб с говядиной</h5>
+                    <p class="text-muted">Сочная говядина гриль, кольца свежего красного лука, соус "барбекю" с дымком в
+                        удлиненной пышной булочке</p>
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div>
+                            <span class="text-decoration-line-through text-muted" style="font-size: 14px;">10
+                                000 сум</span><br>
+                            <span class="fw-bold text-success" style="font-size: 24px;">9 000 сум</span>
+                        </div>
+                        <button class="btn btn-outline-success px-4 py-2" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" style=" font-weight: bold;">
+                            В корзинку
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="product-card bg-white">
+                    <img src="images/donar1.png" class="product-img" alt="Mahsulot rasmi">
+                    <h5 class="mt-3">Саб с говядиной</h5>
+                    <p class="text-muted">Сочная говядина гриль, кольца свежего красного лука, соус "барбекю" с дымком в
+                        удлиненной пышной булочке</p>
+                    <div style="display: inline-block;margin-top: 30px;">
+                        <span class="new-price">9 000 сум</span>
+                        <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                            aria-controls="offcanvasRight" style="border: 2px solid;width: 150px; margin-left: 10px;"
+                            class="btn btn-outline-success">В
+                            корзинку</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="product-card bg-white">
+                    <img src="images/Rectangle 3 (1).png" class="product-img" alt="Mahsulot rasmi">
+                    <h5 class="mt-3">Саб с говядиной</h5>
+                    <p class="text-muted">Сочная говядина гриль, кольца свежего красного лука, соус "барбекю" с дымком в
+                        удлиненной пышной булочке</p>
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div>
+                            <span class="text-decoration-line-through text-muted" style="font-size: 14px;">10
+                                000 сум</span><br>
+                            <span class="fw-bold text-success" style="font-size: 24px;">9 000 сум</span>
+                        </div>
+                        <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                            aria-controls="offcanvasRight" style=" font-weight: bold;"
+                            class="btn btn-outline-success px-4 py-2">
+                            В корзинку
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="product-card bg-white">
+                    <img src="images/donar1.png" class="product-img" alt="Mahsulot rasmi">
+                    <h5 class="mt-3">Саб с говядиной</h5>
+                    <p class="text-muted">Сочная говядина гриль, кольца свежего красного лука, соус "барбекю" с дымком в
+                        удлиненной пышной булочке</p>
+                    <div style="display: inline-block;margin-top: 30px;">
+                        <span class="new-price">9 000 сум</span>
+                        <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                            aria-controls="offcanvasRight" style="width: 150px; margin-left: 10px;"
+                            class="btn btn-outline-success">В
+                            корзинку</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
+                <div class="product-card bg-white">
+                    <img src="images/re.png" class="product-img" alt="Mahsulot rasmi">
+                    <h5 class="mt-3">Саб с говядиной 1</h5>
+                    <p class="text-muted">Сочная говядина гриль, кольца свежего красного лука, соус "барбекю" с дымком в
+                        удлиненной пышной булочке</p>
+                    <div class="d-flex justify-content-between align-items-center mt-5">
+                        <span class="new-price">9 000 сум</span>
+                        <button class="btn btn-outline-success" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">В корзинку</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
+                <div class="product-card bg-white">
+                    <img src="images/donar1.png" class="product-img" alt="Mahsulot rasmi">
+                    <h5 class="mt-3">Саб с говядиной</h5>
+                    <p class="text-muted">Сочная говядина гриль, кольца свежего красного лука, соус "барбекю" с дымком в
+                        удлиненной пышной булочке</p>
+                    <div class="d-flex align-items-center justify-content-between mt-4">
+                        <div>
+                            <span class="text-decoration-line-through text-muted" style="font-size: 14px;">10
+                                000 сум</span><br>
+                            <span class="fw-bold text-success" style="font-size: 24px;">9 000 сум</span>
+                        </div>
+                        <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                            aria-controls="offcanvasRight" class="btn btn-outline-success px-4 py-2"
+                            style="font-weight: bold;">
+                            В корзинку
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
+                <div class="product-card bg-white">
+                    <img src="images/shourma2.png" class="product-img" alt="Mahsulot rasmi">
+                    <h5 class="mt-3">Саб с говядиной</h5>
+                    <p class="text-muted">Сочная говядина гриль, кольца свежего красного лука, соус "барбекю" с дымком в
+                        удлиненной пышной булочке</p>
+                    <div class="d-flex align-items-center justify-content-between mt-4">
+                        <div>
+                            <span class="text-decoration-line-through text-muted" style="font-size: 14px;">10
+                                000 сум</span><br>
+                            <span class="fw-bold text-success" style="font-size: 24px;">9 000 сум</span>
+                        </div>
+                        <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                            aria-controls="offcanvasRight" class="btn btn-outline-success px-4 py-2"
+                            style="font-weight: bold;">
+                            В корзинку
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
+                <div class="product-card bg-white">
+                    <img src="images/rectangle3 .2.png" class="product-img" alt="Mahsulot rasmi">
+                    <h5 class="mt-3">Саб с говядиной</h5>
+                    <p class="text-muted">Сочная говядина гриль, кольца свежего красного лука, соус "барбекю" с дымком в
+                        удлиненной пышной булочке</p>
+                    <div class="d-flex justify-content-between align-items-center mt-5">
+                        <span class="new-price">9 000 сум</span>
+                        <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                            aria-controls="offcanvasRight" class="btn btn-outline-success">В корзинку</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    </div>
+
+
+    <footer>
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-6 mb-5 mt-5">
+                    <br><br><br>
+                    <h1>Доставка по всему Ташкенту!</h1>
+                    <br><br>
+                    <div class="dropdown mb-2 p-2">
+                        <button style="background-color: #0f5a50;width: 75%;" class="btn btn-success dropdown-toggle"
+                            type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Г. Ташкент, Мирзо-Улугбекский р-н
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Г. Ташкент, Шайхонтахурский р-н</a></li>
+                            <hr>
+                            <li><a class="dropdown-item" href="#">Г. Ташкент, Юнусабадский р-н</a></li>
+                            <li><a class="dropdown-item" href="#">Г. Ташкент, Чиланзарский р-н</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown mb-2 p-2">
+                        <button style="background-color: #0d564c;width: 75%;" class="btn btn-success dropdown-toggle"
+                            type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Г. Ташкент, Шайхонтахурский р-н
+                        </button>
+                        <ul class="dropdown-menu show">
+                            <li><a class="dropdown-item" href="#">+998 (78) 777-20-20</a></li>
+                            <li><a class="dropdown-item" href="#">support@macbro.uz</a></li>
+                            <li><a class="dropdown-item" href="#">Г. Ташкент, Шайхонтахурский р-н, ул. Алишера Навои
+                                    27</a></li>
+                        </ul>
+                    </div><br><br>
+                    <div class="dropdown p-2 mt-5">
+                        <button style="background-color: #116056;width: 75%;" class="btn btn-success dropdown-toggle"
+                            type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Г. Ташкент, Мирзо-Улугбекский р-н
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">+998 (78) 777-20-20</a></li>
+                            <hr>
+                            <li><a class="dropdown-item" href="#">support@macbro.uz</a></li>
+                            <hr>
+                            <li><a class="dropdown-item" href="#">Г. Ташкент, Шайхонтахурский р-н, ул. Алишера Навои
+                                    27</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <img style="margin-top: 150px;" class=" float-end" src="velo.png" alt="">
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <nav class="navbar navbar-expand-lg navbar-custom2">
+        <div class="container text-center">
+            <a class="navbar-brand" href="#"></a>
+            <img width="250px" src="images/logo.png" alt="">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto text-center">
+                    <li class="nav-item">
+                        <a class="nav-link text-warning active" href="#">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="https://t.me/AHRORBEKGROUP">Контакты</a>
+                    </li>
+                </ul>
+                <div class="text-center language-container">
+                    <i id="languageToggle" style="font-size: 25px; color: white; cursor: pointer;"
+                        class="bi bi-globe m-2"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+  
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasRightLabel">Карзина</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+
+            <div class="container">
+                <div class="row">
+                    <img src="images/re.png" alt="">
+                    <h4 class="text-center"> Саб с говядиной</h4><br>
+                    <div class="d-inline-block">
+                        9 000 сум
+                        <div class="old-price">
+                            10 000 сум
+                        </div>
+
+                        <div style="margin-top: -50px;" class="float-end">
+                            <div class="buttons1 d-flex align-items-center">
+                                <button onclick="decrease()">-</button>
+                                <div class="counter" id="count">1</div>
+                                <button onclick="increase()">+</button>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="images/suv3.png" alt="">
+                    <h4 class="text-center"> Саб с говядиной</h4><br>
+                    <div class="d-inline-block">
+                        9 000 сум
+                        <div class="old-price">
+                            10 000 сум
+                        </div>
+
+                        <div style="margin-top: -50px;" class="float-end">
+                            <div class="buttons1 d-flex align-items-center">
+                                <button onclick="decrease1()">-</button>
+                                <div class="counter" id="count1">1</div>
+                                <button onclick="increase1()">+</button>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    Всего :
+                    9 000 сум+
+                    9 000 сум
+                    <br>                     
+                    <div class="d-inline-block">
+                       <span class="old-price"> 18 000 сум</span>
+                        <p>15 000 сум</p>
+                    </div> 
+                   <button class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#exampleModal"> Заказать</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+      <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Заказать доставку</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+            <div class="mb-3">
+                <label for="username" class="form-label">Манзилингизни киритинг</label>
+                <input placeholder="Манзилингизни киритинг" type="text" autocomplete="off" class="form-control" id="username">
+            </div>
+            <div class="mb-3">
+                <label for="userphone" class="form-label">Телефонингизни киритинг</label>
+                <input placeholder="Телефонингизни киритинг" type="number" autocomplete="off" class="form-control" id="userphone">
+            </div>
+           
+        
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Ёпиш</button>
+        
+            <button id="sendBtn" type="submit" class="btn btn-outline-success">Сақлаш</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+ 
+               
+ 
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,81 @@
+.navbar-custom {
+    background-color: #1C786B;
+    padding: 10px 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+section .mycol img{
+    width: 300px;
+    height: 300px;
+    animation: aylan 15s linear infinite;
+    border-radius: 50%;
+    margin: auto;
+}
+@keyframes aylan{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.item { display: none; }
+.product-card {
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 7px;
+    height: 500px !important;
+}
+.product-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.new-price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #28a745;
+}
+.old-price {
+    text-decoration: line-through;
+    color: gray;
+}
+footer{
+        background: linear-gradient(60deg, #137d6f 70%,  #EAC632 30%);
+        min-height: 20vh;
+        color: white;
+        overflow: visible !important;
+}
+.navbar-custom2 {
+    background-color: #0d4f46;
+    padding: 10px 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.dropdown-menu {
+    position: absolute !important;
+    display: block;
+}
+.dropdown-menu {
+    z-index: 1050 !important;
+    position: absolute !important;
+}
+
+.buttons1 {
+    display: flex;
+    align-items: center;
+}
+
+.buttons1 button, 
+.buttons1 .counter {
+    margin: 0 5px; /* Tugmalar orasiga masofa qo‘shish */
+    padding: 5px 10px;
+    text-align: center;
+    border: none;
+}
